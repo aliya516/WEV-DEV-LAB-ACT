@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Aliya's Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="background">
+    <header>
+      <nav>
+        <a href="#home">HOME</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section id="home" class="welcome-section">
+      <div class="welcome-container">
+        <div class="images">
+          <img src="Assets\media1.jpg" alt="Media" class="circle-img" />
+          <img src="Assets\media2.jpg" alt="Swimming" class="circle-img" />
+        </div>
+        <div class="welcome-text">
+          <h1>HI, WELCOME TO MY PERSONAL BLOG</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+      <h2 class="section-title">ABOUT ME</h2>
+      <p class="about-text">
+        I am Aliya Beyonce B. Almaden, a third-year student at the Technological University of the Philippines studying information systems.
+      </p>
+      <p class="about-text">
+        I have learned programming languages like C, C++, and Java, and I want to learn more about them and other languages.
+      </p>
+      <p class="about-text">
+        Technology shapes every part of our daily life. We use it to stay connected, solve problems, and create new solutions to improve our world.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2 class="section-title">CONTACT ME</h2>
+      <p>Email: <a href="mailto:aliyaalmaden@gmail.com">aliyaalmaden@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/aliya516">https://github.com/aliya516</a></p>
+      
+      <!-- Simple Contact Form -->
+      <form class="contact-form">
+        <label for="fname">Your Name:</label>
+        <input type="text" id="fname" name="fname" required />
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required />
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Aliya Beyonce Almaden</p>
+    </footer>
+  </body>
+</html>
