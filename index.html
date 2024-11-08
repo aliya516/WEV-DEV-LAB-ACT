@@ -10,58 +10,96 @@
     <header>
       <nav>
         <a href="#home">HOME</a>
+        <a href="#about">ABOUT ME</a>
         <a href="#projects">PROJECTS</a>
-        <a href="#skills">SKILLS</a>
         <a href="#contact">CONTACT</a>
       </nav>
     </header>
 
-    <!-- Welcome Section -->
-    <section id="home" class="welcome-section">
+    <!-- Solo Starting Page (Landing Page) -->
+    <section id="home" class="landing-page">
       <div class="welcome-container">
-        <div class="images">
-          <img src="Assets\media1.jpg" alt="Media" class="circle-img" />
-          <img src="Assets\media2.jpg" alt="Swimming" class="circle-img" />
+        <div class="image-container">
+          <img src="Assets/media2.jpg" alt="Swimming" class="media-img" />
         </div>
         <div class="welcome-text">
-          <h1>HI, WELCOME TO MY PERSONAL BLOG</h1>
+          <h1>Oh hey!, I'm Aliya Beyonce</h1>
+          <button class="cta-button" onclick="window.location.href='#about'">Want to know more about coding life?</button>
         </div>
       </div>
     </section>
 
-    <!-- About Me Section -->
-    <section id="about" class="about">
-      <h2 class="section-title">ABOUT ME</h2>
-      <p class="about-text">
-        I am Aliya Beyonce B. Almaden, a third-year student at the Technological University of the Philippines studying information systems.
-      </p>
-      <p class="about-text">
-        I have learned programming languages like C, C++, and Java, and I want to learn more about them and other languages.
-      </p>
-      <p class="about-text">
-        Technology shapes every part of our daily life. We use it to stay connected, solve problems, and create new solutions to improve our world.
-      </p>
+    <!-- About Me Page -->
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <div class="about-img">
+          <img src="Assets/media1.jpg" alt="Media" class="circle-img" />
+        </div>
+        <div class="about-text">
+          <h2>ABOUT ME</h2>
+          <div class="info-box">
+            <p>Hi, I am Aliya Beyonce, a third-year BS Information Student at the Technological University of the Philippines.</p>
+            <p>I have learned programming languages like C, C++, HTML, CSS, and Java. It's a bumpy road to go where I am right now. Coding is hard, but technology shapes every part of our daily life. We use it to stay connected, solve problems, and create new solutions to improve our world.</p>
+            <p>I want to learn more about them and other languages.</p>
+          </div>
+          <button class="cta-button" onclick="window.location.href='#projects'">Want to see my sample projects?</button>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <h2 class="section-title">CONTACT ME</h2>
-      <p>Email: <a href="mailto:aliyaalmaden@gmail.com">aliyaalmaden@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/aliya516">https://github.com/aliya516</a></p>
-      
-      <!-- Simple Contact Form -->
-      <form class="contact-form">
-        <label for="fname">Your Name:</label>
-        <input type="text" id="fname" name="fname" required />
-        
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required />
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        
-        <button type="submit">Submit</button>
-      </form>
+    <!-- Projects Page -->
+    <section id="projects" class="projects-section">
+      <h2>PROJECTS</h2>
+      <table>
+        <tr>
+          <th>Project</th>
+          <th>Description</th>
+          <th>Technologies Used</th>
+          <th>Links</th>
+        </tr>
+        <tr>
+          <td>Text File Compressor</td>
+          <td>Reduces the size of a text file using an algorithm.</td>
+          <td>C++</td>
+          <td><a href="Assets/Text_File_Compressor.cpp">Download</a></td>
+        </tr>
+        <tr>
+          <td>Text File Decompressor</td>
+          <td>Allows the user to extract compressed files restoring them to their original format.</td>
+          <td>C++</td>
+          <td><a href="Assets/Text_File_Decompressor.cpp">Download</a></td>
+        </tr>
+        <tr>
+          <td>Password Checker</td>
+          <td>Evaluates the strength of a user-defined password.</td>
+          <td>JAVA</td>
+          <td><a href="Assets/Password_Checker.java">Download</a></td>
+        </tr>
+      </table>
+      <button class="cta-button" onclick="window.location.href='#contact'">Go to Contact</button>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="contact-section">
+      <h2>CONTACT ME</h2>
+      <div class="contact-container">
+        <form class="contact-form">
+          <label for="fname">Your Name:</label>
+          <input type="text" id="fname" name="fname" required />
+          
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required />
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          
+          <button type="submit">Submit</button>
+        </form>
+        <div class="contact-details">
+          <p>Email: <a href="mailto:aliyaalmaden@gmail.com">aliyaalmaden@gmail.com</a></p>
+          <p>GitHub: <a href="https://github.com/aliya516" target="_blank">https://github.com/aliya516</a></p>
+        </div>
+      </div>
     </section>
 
     <footer>
@@ -69,3 +107,6 @@
     </footer>
   </body>
 </html>
+
+
+
