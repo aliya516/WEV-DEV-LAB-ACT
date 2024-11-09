@@ -3,14 +3,14 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fae8e0; /* Light Pink */
-  color: #333;
+  background-color: #1C1C1C; /* light pink */
+  color: #f0f0f0; /*333*/
   text-align: center;
 }
 
 /* Header */
 header {
-  background-color: #333;
+  background-color: #1C1C1C;
   color: white;
   padding: 20px 0;
 }
@@ -48,7 +48,7 @@ header nav a:hover {
   width: 350px;
   height: auto;
   border: 8px solid #fb6090;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(180, 85, 85, 0.2);
   border-radius: 15px;
 }
 
@@ -196,7 +196,7 @@ label {
 }
 
 input, textarea {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ef7c8e;
@@ -210,7 +210,7 @@ textarea {
 button[type="submit"] {
   background-color: #fb6090;
   color: white;
-  padding: 12px 25px;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
