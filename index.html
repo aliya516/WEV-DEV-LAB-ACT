@@ -3,51 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Aliya's Portfolio</title>
+    <title>Aliya's Blog</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="background">
     <header>
+      <div class="left-side">ALIYA BEYONCE'S BLOG</div>
       <nav>
         <a href="#home">HOME</a>
-        <a href="#about">ABOUT ME</a>
+        <a href="#aboutme">ABOUT ME</a>
         <a href="#projects">PROJECTS</a>
         <a href="#contact">CONTACT</a>
       </nav>
     </header>
 
-    <!-- Solo Starting Page (Landing Page) -->
-    <section id="home" class="landing-page">
+    <section id="home" class="home-page">
       <div class="welcome-container">
         <div class="image-container">
           <img src="Assets/media2.jpg" alt="Swimming" class="media-img" />
         </div>
+
         <div class="welcome-text">
-          <h1>Oh hey!, I'm Aliya Beyonce</h1>
-          <button class="cta-button" onclick="window.location.href='#about'">Want to know more about coding life?</button>
+          <h1>Oh hey! I'm Aliya Beyonce</h1>
+          <p>
+            A third-year student studying BS Information System at Technological
+            University of the Philippines
+          </p>
+          <button class="cta-button" onclick="window.location.href='#aboutme'">
+            Want to know more about my coding life?
+          </button>
         </div>
       </div>
     </section>
 
-    <!-- About Me Page -->
-    <section id="about" class="about-section">
-      <div class="about-container">
+    <section id="aboutme" class="aboutme-section">
+      <div class="aboutme-container">
         <div class="about-img">
-          <img src="Assets/media1.jpg" alt="Media" class="circle-img" />
+          <img src="Assets/1st.jpg" alt="1st" class="1st-img" />
+          <p>FRESHMAN YEAR</p>
+          <p>"Full of adjustments, coding is tough"</p>
+        </div>
+        <div class="about-img2">
+          <img src="Assets/2nd.jpg" alt="2nd" class="2nd-img" />
+          <p>SOPHOMORE YEAR</p>
+          <p>"Bugs are still everywhere"</p>
+        </div>
+        <div class="about-img3">
+          <img src="Assets/3rd.jpg" alt="3rd" class="3rd-img" />
+          <p>THIRD YEAR</p>
+          <p>"Coding feels more like a challenge now"</p>
+        </div>
+        <div class="about-img4">
+          <img src="Assets/4th.png" alt="4th" class="4th-img" />
+          <p>GRADUATING</p>
+          <p>"Gradwaiting soon!"</p>
         </div>
         <div class="about-text">
-          <h2>ABOUT ME</h2>
           <div class="info-box">
-            <p>Hi, I am Aliya Beyonce, a third-year BS Information Student at the Technological University of the Philippines.</p>
-            <p>I have learned programming languages like C, C++, HTML, CSS, and Java. It's a bumpy road to go where I am right now. Coding is hard, but technology shapes every part of our daily life. We use it to stay connected, solve problems, and create new solutions to improve our world.</p>
-            <p>I want to learn more about them and other languages.</p>
+            <p>
+              Hi, I am Aliya Beyonce, a third-year BS Information Student at the
+              Technological University of the Philippines.I have learned
+              programming languages like C, C++, HTML, CSS, and Java. It's a
+              bumpy road to go where I am right now. Coding is hard, but
+              technology shapes every part of our daily life. We use it to stay
+              connected, solve problems, and create new solutions to improve our
+              world. I want to learn more about them and other languages.
+            </p>
           </div>
-          <button class="cta-button" onclick="window.location.href='#projects'">Want to see my sample projects?</button>
+          <button class="cta-button" onclick="window.location.href='#projects'">
+            Want to see my sample projects?
+          </button>
         </div>
       </div>
     </section>
 
-    <!-- Projects Page -->
     <section id="projects" class="projects-section">
       <h2>PROJECTS</h2>
       <table>
@@ -61,43 +90,60 @@
           <td>Text File Compressor</td>
           <td>Reduces the size of a text file using an algorithm.</td>
           <td>C++</td>
-          <td><a href="Assets/Text_File_Compressor.cpp">Download</a></td>
+          <td>
+            <a href="Assets/Almaden & Esteban_Text File Compression.cpp"
+              >Text File Compressor</a
+            >
+          </td>
         </tr>
         <tr>
           <td>Text File Decompressor</td>
-          <td>Allows the user to extract compressed files restoring them to their original format.</td>
+          <td>
+            Allows the user to extract compressed files restoring them to their
+            original format.
+          </td>
           <td>C++</td>
-          <td><a href="Assets/Text_File_Decompressor.cpp">Download</a></td>
+          <td>
+            <a href="Assets/Almaden & Esteban_Text File Decompression.cpp">
+              Text File Decompressor</a
+            >
+          </td>
         </tr>
         <tr>
           <td>Password Checker</td>
           <td>Evaluates the strength of a user-defined password.</td>
           <td>JAVA</td>
-          <td><a href="Assets/Password_Checker.java">Download</a></td>
+          <td>
+            <a href="Assets/Alamden, Aliya_Password Checker.java">
+              Password Checker</a
+            >
+          </td>
         </tr>
       </table>
-      <button class="cta-button" onclick="window.location.href='#contact'">Go to Contact</button>
+      <button class="cta-button" onclick="window.location.href='#contact'">
+        Contact Me
+      </button>
     </section>
 
-    <!-- Contact Page -->
     <section id="contact" class="contact-section">
-      <h2>CONTACT ME</h2>
       <div class="contact-container">
         <form class="contact-form">
           <label for="fname">Your Name:</label>
           <input type="text" id="fname" name="fname" required />
-          
+
           <label for="email">Your Email:</label>
           <input type="email" id="email" name="email" required />
-          
+
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="5" required></textarea>
-          
+
           <button type="submit">Submit</button>
         </form>
         <div class="contact-details">
-          <p>Email: <a href="mailto:aliyaalmaden@gmail.com">aliyaalmaden@gmail.com</a></p>
-          <p>GitHub: <a href="https://github.com/aliya516" target="_blank">https://github.com/aliya516</a></p>
+          <p>
+            <a href="mailto:aliyaalmaden@gmail.com">Email</a> |
+            <a href="https://github.com/aliya516" target="_blank">Github</a>
+          </p>
         </div>
       </div>
     </section>
@@ -107,6 +153,3 @@
     </footer>
   </body>
 </html>
-
-
-
